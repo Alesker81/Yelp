@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Restaurant.destroy_all if Rails.env.development?
 Restaurant.create(name: 'Omar', address: 'Calgary street', phone_number: "38474629304", category: "belgian")
 Restaurant.create(name: 'Alex', address: "Ottawa street", phone_number: "746523445672", category: "french")
 Restaurant.create(name: 'Alaskar', address: "Vancouver street", phone_number: "74658392934", category: "japanese")
